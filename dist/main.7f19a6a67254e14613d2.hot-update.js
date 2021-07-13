@@ -6,7 +6,7 @@
  * or disable the default devtool with "devtool: false".
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
-self["webpackHotUpdate_3dglo"]("main",{
+self["webpackHotUpdatesimple"]("main",{
 
 /***/ "./src/index.js":
 /*!**********************!*\
@@ -15,7 +15,7 @@ self["webpackHotUpdate_3dglo"]("main",{
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_popup__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/popup */ \"./src/modules/popup.js\");\n\n\n\nwindow.addEventListener('DOMContentLoaded', function () {\n  (0,_modules_popup__WEBPACK_IMPORTED_MODULE_0__.default)();\n}); //     import countTimer from './modules/countTimer';\n// countTimer('10 july 2021');\n\n//# sourceURL=webpack://3dglo/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_togglePopup__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/togglePopup */ \"./src/modules/togglePopup.js\");\n/* harmony import */ var _modules_togglePopup__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_modules_togglePopup__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _modules_modals__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/modals */ \"./src/modules/modals.js\");\n\n\n\n\nwindow.addEventListener('DOMContentLoaded', function () {\n  _modules_togglePopup__WEBPACK_IMPORTED_MODULE_0___default()();\n  (0,_modules_modals__WEBPACK_IMPORTED_MODULE_1__.default)();\n});\n\n//# sourceURL=webpack://simple/./src/index.js?");
 
 /***/ })
 
@@ -25,7 +25,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mod
 /******/ 
 /******/ /* webpack/runtime/getFullHash */
 /******/ (() => {
-/******/ 	__webpack_require__.h = () => ("ff12af5969c51c420199")
+/******/ 	__webpack_require__.h = () => ("3c058eccbaf1bb6390d4")
 /******/ })();
 /******/ 
 /******/ }

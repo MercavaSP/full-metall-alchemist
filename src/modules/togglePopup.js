@@ -9,7 +9,6 @@ const togglePopup = () => {
         elem.addEventListener('click', () => {
             popup.style.display = 'block';
             overlay.style.display = 'block';
-            // console.log('1 :>> ', 1);
         });
     });
     
@@ -17,6 +16,16 @@ const togglePopup = () => {
         popup.style.display = 'none';
         overlay.style.display = 'none';
     });
+
+    overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) {
+            popup.style.display = 'none';
+            overlay.style.display = 'none';
+        }
+    });
 };
 
 export default togglePopup;
+
+
+

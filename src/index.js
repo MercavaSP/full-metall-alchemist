@@ -1,17 +1,14 @@
 'use strict';
 
 import togglePopup from "./modules/togglePopup";
-
+import modals from "./modules/modals";
 
 
 window.addEventListener('DOMContentLoaded', () => {
 
     togglePopup();
+    modals();
 
 
 
 });
-
-//     import countTimer from './modules/countTimer';
-
-// countTimer('10 july 2021');
