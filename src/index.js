@@ -1,13 +1,13 @@
 'use strict';
 
 import togglePopup from "./modules/togglePopup";
-import modals from "./modules/modals";
+import scroll from "./modules/scroll";
 
 
-window.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
 
     togglePopup();
-    modals();
+    scroll();
 
 
 

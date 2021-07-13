@@ -1223,6 +1223,9 @@ video#video_background {
   padding: 0 2px;
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.6);
+  background-image: url(../images/32_chevron_up.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media only screen and (min-width: 992px) {

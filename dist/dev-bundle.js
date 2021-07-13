@@ -38,17 +38,18 @@ eval("\nmodule.exports = function () {\n\treturn /[\\u001b\\u009b][[()#;?]*(?:[0
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_togglePopup__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/togglePopup */ \"./src/modules/togglePopup.js\");\n/* harmony import */ var _modules_modals__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/modals */ \"./src/modules/modals.js\");\n/* harmony import */ var _modules_modals__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_modules_modals__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\n\nwindow.addEventListener('DOMContentLoaded', function () {\n  (0,_modules_togglePopup__WEBPACK_IMPORTED_MODULE_0__.default)();\n  _modules_modals__WEBPACK_IMPORTED_MODULE_1___default()();\n});\n\n//# sourceURL=webpack://simple/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_togglePopup__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/togglePopup */ \"./src/modules/togglePopup.js\");\n/* harmony import */ var _modules_scroll__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/scroll */ \"./src/modules/scroll.js\");\n\n\n\n\ndocument.addEventListener('DOMContentLoaded', function () {\n  (0,_modules_togglePopup__WEBPACK_IMPORTED_MODULE_0__.default)();\n  (0,_modules_scroll__WEBPACK_IMPORTED_MODULE_1__.default)();\n});\n\n//# sourceURL=webpack://simple/./src/index.js?");
 
 /***/ }),
 
-/***/ "./src/modules/modals.js":
+/***/ "./src/modules/scroll.js":
 /*!*******************************!*\
-  !*** ./src/modules/modals.js ***!
+  !*** ./src/modules/scroll.js ***!
   \*******************************/
-/***/ (() => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("// const modals = () => {\n//     function bindModal(trigger, modal, close) {\n//         trigger.addEventListener('click', (event) => {\n//             if (event.target) {\n//                 event.preventDegault();\n//             }\n//             modal.style.display = \"block\";\n//             document.body.style.overflow = \"hiden\";\n//         });\n//         close.addEventListener('click', () => {\n//             modal.style.display = \"none\";\n//             document.body.style.overflow = \"\";   \n//         });\n//     }\n//     const popupBtn = document.querySelector('.callback-btn'),\n//         modal = document.querySelector('.modal-callback'),\n//         popupClose = document.querySelector('.modal-close');\n//     bindModal(popupBtn, modal, popupClose);\n// };\n// export default modals;\n\n//# sourceURL=webpack://simple/./src/modules/modals.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar scroll = function scroll() {\n  var links = document.querySelectorAll('.smooth-scroll');\n\n  for (var i = 0; i < links.length; i++) {\n    links[i].addEventListener('click', function (event) {\n      event.preventDefault();\n      console.log(event.target.getAttribute(\"href\").substr(1));\n    });\n  }\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (scroll);\n\n//# sourceURL=webpack://simple/./src/modules/scroll.js?");
 
 /***/ }),
 
@@ -433,18 +434,6 @@ eval("var map = {\n\t\"./log\": \"./node_modules/webpack/hot/log.js\"\n};\n\n\nf
 /******/ 	__webpack_require__.i = [];
 /******/ 	
 /************************************************************************/
-/******/ 	/* webpack/runtime/compat get default export */
-/******/ 	(() => {
-/******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = (module) => {
-/******/ 			var getter = module && module.__esModule ?
-/******/ 				() => (module['default']) :
-/******/ 				() => (module);
-/******/ 			__webpack_require__.d(getter, { a: getter });
-/******/ 			return getter;
-/******/ 		};
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -473,7 +462,7 @@ eval("var map = {\n\t\"./log\": \"./node_modules/webpack/hot/log.js\"\n};\n\n\nf
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("cedfa24f40ae537ef3b6")
+/******/ 		__webpack_require__.h = () => ("3289eaa81166df498d07")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
